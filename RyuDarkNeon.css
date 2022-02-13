@@ -1,8 +1,28 @@
+/**
+ * @name Dark Neon
+ * @author Bates#7075
+ * @version 1.0.0
+ * @source https://gitlab.com/CommandCrafterHD/bates-discord-theme
+ * @website https://commandcrafterhd.gitlab.io/bates-discord-theme/
+ * @donate https://www.paypal.com/paypalme/floriancegledi
+ * @description A dark theme with bright neon-y colors!
+ * @authorId 137259132305539072
+*/
+
+/*@import url('https://commandcrafterhd.github.io/DiscordDarkNeon/css/main.css');
+/* ^ This is the main Import ^ DO NOT TOUCH. Without this, the theme won't load!!! */
+
+/*@import url('https://commandcrafterhd.github.io/DiscordDarkNeon/css/hideUsers.css');
+/* ^ This import ^ Collapses the userlist in Servers and Groups, comment it out if you don't want that! */
+/* Also a big thank you to rmkx for letting me use some of their code for this, check out their "Boreal" theme! */
+
 @import url('https://commandcrafterhd.github.io/DiscordDarkNeon/css/usertags.css');
 @import url("https://discord-custom-covers.github.io/usrbg/snippets/userPopouts.css");
 
 /* --== Define some general variables! ==-- */
 :root {
+  --RyuMainBg: 0, 0, 0;
+  --RyuLight: 0, 10, 20;
   --rgb-highlight: 4, 217, 255;
   --highlight: rgb(var(--rgb-highlight));
   --background: black;
@@ -259,25 +279,25 @@ s {
 
 /* --== Style Mentions in messages ==-- */
 .mentioned-Tre-dv:before {
-  background-color: var(--highlight);
+  background-color: var(--RyuLight) !important;
 }
 
 .mentioned-Tre-dv {
-  background: linear-gradient(90deg, rgba(var(--rgb-highlight), 0.4) 0%, rgba(var(--rgb-highlight), 0) 100%);
+  background: var(--RyuMainBg) !important;
 }
 
 .mentioned-Tre-dv:hover {
-  background: linear-gradient(90deg, rgba(var(--rgb-highlight), 0.4) 0%, rgba(var(--rgb-highlight), 0) 100%) !important;
+  background: var(--RyuLight) !important;
 }
 
 .wrapper-1ZcZW- {
-  color: var(--highlight) !important;
-  background: linear-gradient(90deg, rgba(var(--rgb-highlight), 0.2) 0%, rgba(var(--rgb-highlight), 0.2) 100%) !important;
+  color: var(--RyuMainBg) !important;
+  background: RyuMainBg !important;
 }
 
 .wrapper-1ZcZW-:hover {
-  color: var(--highlight) !important;
-  background: linear-gradient(90deg, rgba(var(--rgb-highlight), 0.4) 0%, rgba(var(--rgb-highlight), 0.4) 100%) !important;
+  color: var(--RyuMainBg) !important;
+  background: var(--RyuMainBg) !important;
 }
 
 /* --== Style new message bubble ==-- */
@@ -872,7 +892,7 @@ s {
 
 /* --== Style Reply-marker ==-- */
 .replying-eZ7p5z:before {
-  background-color: var(--highlight);
+  background-color: var(--background-primary);
 }
 
 /* --== Style Boost-Server page ==-- */
@@ -1256,4 +1276,23 @@ s {
 /* --== Remove unread half-circles within servers in favor of colored channel-names ==-- */
 .unread-36eUEm {
   display: none;
+}
+
+/* CUSTOMIZE COLORS IN HERE! */
+:root {
+  --rgb-highlight: 39, 191, 232 !important; /* The main highlight color in RGB values (RGB instead of hex is needed for faded effects) */
+  --background: black !important; /* The main background color */
+  --close-button: var(--dnd-color) !important; /* The main "close this" or "deny" color */
+  --online-color: #39ff14 !important; /* The color used in the "online" user status symbol */
+  --afk-color: #FFFF33 !important; /* The color used in the "idle" user status symbol */
+  --dnd-color: #FF0000 !important; /* The color used in the "do not disturb" user status symbol */
+  --streaming-color: #bc13fe !important; /* The color used in the "streaming X" user status symbol */
+
+  /* --== Radial Status support ==-- */
+  --rs-online-color: var(--online-color) !important;
+  --rs-idle-color: var(--afk-color) !important;
+  --rs-dnd-color: var(--dnd-color) !important;
+  --rs-offline-color: gray !important;
+  --rs-invisible-color: gray !important;
+  --rs-streaming-color: var(--stream-color) !important;
 }
