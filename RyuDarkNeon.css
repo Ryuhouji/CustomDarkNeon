@@ -3,8 +3,6 @@
  * @author Ryuhouji#2180
  * @version 1.0.0
  * @source https://github.com/Ryuhouji/CustomDarkNeon
- * @website https://github.com/Ryuhouji/CustomDarkNeon
- * @donate https://github.com/Ryuhouji/CustomDarkNeon
  * @description A dark theme with blue accents.
  * @authorId 118470023181369344
 */
@@ -18,6 +16,8 @@
   --RyuLight: 0, 10, 20;
   --rgb-highlight: 4, 217, 255;
   --highlight: rgb(var(--rgb-highlight));
+  --rgbinteract: 4, 175, 196;
+  --interactcolor: rgb(var(--rgbinteract));
   --background: black;
   --close-button: var(--dnd-color) !important;
   --online-color: #39ff14;
@@ -30,8 +30,8 @@
   --rs-offline-color: gray;
   --rs-invisible-color: gray;
   --rs-streaming-color: var(--stream-color);
-  --interactive-hover: var(--highlight);
-  --interactive-active: var(--highlight);
+  --interactive-hover: var(--interactcolor);
+  --interactive-active: var(--interactcolor);
   --text-link: var(--highlight);
   --bdfdb-blurple: var(--highlight);
   --logo-primary: var(--highlight);
@@ -187,7 +187,7 @@
 
 /* --== Style codeblocks and Markdown notation in Chat inputbox ==-- */
 .codeBlockSyntax-2MZ-Qy, .syntaxAfter-OxiKEl, .syntaxBefore-3pDAmR {
-  color: var(--highlight);
+  color: var(--interactcolor);
 }
 
 /* --== Style strikethrough text ==-- */
