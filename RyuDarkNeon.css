@@ -1,23 +1,16 @@
 /**
  * @name Dark Neon
- * @author Bates#7075
+ * @author Ryuhouji#2180
  * @version 1.0.0
- * @source https://gitlab.com/CommandCrafterHD/bates-discord-theme
- * @website https://commandcrafterhd.gitlab.io/bates-discord-theme/
- * @donate https://www.paypal.com/paypalme/floriancegledi
- * @description A dark theme with bright neon-y colors!
- * @authorId 137259132305539072
+ * @source https://github.com/Ryuhouji/CustomDarkNeon
+ * @website https://github.com/Ryuhouji/CustomDarkNeon
+ * @donate https://github.com/Ryuhouji/CustomDarkNeon
+ * @description A dark theme with blue accents.
+ * @authorId 118470023181369344
 */
 
-/*@import url('https://commandcrafterhd.github.io/DiscordDarkNeon/css/main.css');
+@import url('https://github.com/Ryuhouji/CustomDarkNeon/blob/main/RyuDarkNeon.css');
 /* ^ This is the main Import ^ DO NOT TOUCH. Without this, the theme won't load!!! */
-
-/*@import url('https://commandcrafterhd.github.io/DiscordDarkNeon/css/hideUsers.css');
-/* ^ This import ^ Collapses the userlist in Servers and Groups, comment it out if you don't want that! */
-/* Also a big thank you to rmkx for letting me use some of their code for this, check out their "Boreal" theme! */
-
-@import url('https://commandcrafterhd.github.io/DiscordDarkNeon/css/usertags.css');
-@import url("https://discord-custom-covers.github.io/usrbg/snippets/userPopouts.css");
 
 /* --== Define some general variables! ==-- */
 :root {
